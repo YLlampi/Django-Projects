@@ -1,0 +1,8 @@
+body {
+    font-family: 'Open-Sans', sans-serif;
+    line-height: 1.6;
+}
+
+.add-todo-input {
+    outline: None;
+}

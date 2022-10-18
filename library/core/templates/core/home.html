@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div>
+        <h2>Listado de Libros</h2>
+        <hr>
+        <ul>
+            {% for book in books %}
+                <li>{{ book.name }}
+                    <button><a href="{% url 'update_book' book.id %}">Actualizar libro</a></button>
+                    <button><a href="{% url 'delete_book' book.id %}">Eliminar libro</a></button>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+
+{% endblock content %}

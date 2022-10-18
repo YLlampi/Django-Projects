@@ -1,0 +1,10 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+        <p>¿Seguro que quieres eliminar el Libro?</p>
+        <input type="submit" value="Si">
+    </form>
+    <a href="{% url 'home' %}">Cancelar</a>
+{% endblock content %}
